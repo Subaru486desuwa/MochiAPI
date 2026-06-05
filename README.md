@@ -48,7 +48,7 @@
 
 **② 注册 + 建 Key**
 
-注册 [mochiapi.com](https://mochiapi.com) → 充值 → 「令牌 → 添加」，**务必选分组**（Claude 用 `vip1_aws`，GPT 用 `vip2_plus`）。
+注册 [mochiapi.com](https://mochiapi.com) → 充值 → 「令牌 → 添加」，**务必选分组**（Claude 用 `vip1_max`，GPT 用 `vip2_pro`）。
 
 **③ 一键导入 CC Switch**
 
