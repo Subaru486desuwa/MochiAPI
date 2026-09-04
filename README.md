@@ -23,17 +23,9 @@
 | 分组 | 倍率 | 适用模型 | 说明 |
 | --- | --- | --- | --- |
 | `vip1_aws` | **1x** | Claude Opus / Sonnet / Haiku | 最便宜的 Claude 通道 |
-| `vip1_max` | 1.5x | Claude Opus / Sonnet / Haiku | MAX 号池，假一赔十 |
-| `vip2_plus` | **0.15x** | GPT-5.2 ~ 5.5 全系 | 最便宜的 GPT 通道 |
-| `vip2_pro` | 0.3x | GPT-5.2 ~ 5.5 全系 | GPT 稳定通道 |
+| `vip1_max` | 1.3x | Claude Opus / Sonnet / Haiku | MAX 号池，假一赔十 |
+| `vip2_pro` | 0.25x | GPT-5.2 ~ 5.5 全系 | GPT 稳定通道 |
 | `grok` | 0.1x | Grok 4.20 系列 | xAI 直连 |
-| `vip4_ds_pro` | 0.23x | DeepSeek 全系 | 官方 API 直连 |
-| `vip3_api` | 3x | Gemini 3 Pro / Flash | 官方 API，倍率偏高 |
-| `default` | 5x | 全模型 | ⚠️ 未选分组的兜底，最贵 |
-
-> 倍率是站内额度的计费系数，**越低越便宜**（`0.15x` 即按 15% 扣费）。**建 Key 时务必选对分组**，别用 `default`。实时倍率以控制台「令牌 → 我的可用分组」为准。
-
-**¥100 大概能跑**：Sonnet 写代码 ~350–500 次 · Opus 重构 ~70–120 次 · Haiku ~1500–2500 次 · GPT-5.5 ~350–500 次 · Grok ~3000–5000 次。
 
 ---
 
@@ -73,7 +65,7 @@ model_provider = "MochiAPI"
 
 [model_providers.MochiAPI]
   name     = "Mochi"
-  base_url = "https://mochiapi.com/v1"
+  base_url = "https://api.mochiapi.com/v1"
   env_key  = "MOCHI_API_KEY"
 ```
 
