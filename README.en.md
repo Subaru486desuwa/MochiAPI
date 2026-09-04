@@ -23,17 +23,9 @@ Online top-up at **RMB : credit = 1 : 1** (¥1 = $1 credit, never expires). You'
 | Group | Ratio | Models | Notes |
 | --- | --- | --- | --- |
 | `vip1_aws` | **1x** | Claude Opus / Sonnet / Haiku | Cheapest Claude route |
-| `vip1_max` | 1.5x | Claude Opus / Sonnet / Haiku | MAX pool, 10× refund |
-| `vip2_plus` | **0.15x** | GPT-5.2 ~ 5.5 | Cheapest GPT route |
-| `vip2_pro` | 0.3x | GPT-5.2 ~ 5.5 | Stable GPT route |
+| `vip1_max` | 1.3x | Claude Opus / Sonnet / Haiku | MAX pool, 10× refund |
+| `vip2_pro` | 0.25x | GPT-5.2 ~ 5.5 | Stable GPT route |
 | `grok` | 0.1x | Grok 4.20 | xAI direct |
-| `vip4_ds_pro` | 0.23x | DeepSeek | Official API direct |
-| `vip3_api` | 3x | Gemini 3 Pro / Flash | Official API, higher ratio |
-| `default` | 5x | All models | ⚠️ Fallback when no group is set — most expensive |
-
-> The ratio is a billing coefficient on your credit — **lower is cheaper** (`0.15x` = billed at 15%). **Always pick the right group** when creating a key; don't use `default`. Live ratios: console → Tokens → My available groups.
-
-**~$100 of credit roughly buys**: Sonnet coding ~350–500 runs · Opus refactors ~70–120 · Haiku ~1500–2500 · GPT-5.5 ~350–500 · Grok ~3000–5000.
 
 ---
 
@@ -61,7 +53,7 @@ In the token list, find your key, click **⋮ → "Import to CC Switch" → pick
 
 ```json
 {
-  "ANTHROPIC_BASE_URL": "https://mochiapi.com",
+  "ANTHROPIC_BASE_URL": "https://api.mochiapi.com",
   "ANTHROPIC_AUTH_TOKEN": "sk-your-key"
 }
 ```
